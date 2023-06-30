@@ -33,6 +33,13 @@ The following AWS services are required to deploy HCL Domino running on AWS.
 * AMS Virtual Private Cloud (VPC)
 * AMS Elastic Compute Cloud (EC2)
 
+System requirements for HCL Domino regardless of the deployment type are outlined in article [KB0073794](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0073794)
+
+On high level, the minimum requirements are:
+•	min. 1 CPU Core, recommending 2 CPU Cores
+•	min. 3 GByte Disk storage
+•	min. 4 GByte Memory
+
 ### Time
 
 The deployment will take about 5min, but configuration

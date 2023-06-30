@@ -31,7 +31,7 @@ Storage, memory, and CPU resources can be added as needed to the deployment. For
 
 HCL Domino Server is an all in one product where a single instance of the product is providing access to rich clients and web browser, a NAT gateway is used to provide access to TCP ports 1352, 80/443, and other ports as needed. 
 
-### Scaling
+### Scalability
 
 An HCL Domino environment can scale in multiple dimensions.
 * Vertially by adding more ressources to a single instance

@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "Deployment"
-nav_order: 2
+parent: "Home"
+nav_order: 1
 description: "Deployment"
 has_children: false
 ---
