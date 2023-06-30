@@ -22,12 +22,16 @@ This website is providing information on how to run HCL Domino on AWS.
 </details>
 
 ## Background
-This guide will detail the steps to deploy the [AWS CloudFormation template](https://aws.amazon.com/cloudformation/) following AWS best practices.
+This guide will detail the steps to deploy the HCL Domino Server following AWS best practices.
 
-in this guide, we cover two types of deployments for the AnyCompany AWS CloudFormation template. The first method is a scalable, multi-availability zone (AZ), fault tolerant deployment, and the second method is a single availability zone deployment.
+In this guide, we cover the following types of deployments:
+* Single availability zone deployment
 
 ## Prerequisites and Requirements
 
+The following AWS services are required to deploy HCL Domino running on AWS.
+* AMS Virtual Private Cloud (VPC)
+* AMS Elastic Compute Cloud (EC2)
 
 ### Time
 
@@ -44,11 +48,12 @@ An AWS Marketplace subscription is required for production use of the HCL Domino
 ### AWS Account
 
 You must have an AWS account set-up. 
-Start here: https://aws.amazon.com/getting-started/
+Start [here](https://aws.amazon.com/getting-started/)
 
 ### Knowledge Requirements
 
 The following table lists the skills and knowledge needed to deploy and operate HCL Domino on AWS.
+
 Skill |	Description
 ---|---
 AWS Engineer | To deploy all required resources as per design and administration.
