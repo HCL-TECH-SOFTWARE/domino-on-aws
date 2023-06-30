@@ -20,10 +20,8 @@ has_children: false
 
 Step by step instructions to deploy an HCL Domino Server in AWS.
 
-1. Log into [your] AWS account with the IAM entity created in the prerequisites section with the required permissions to deploy the solution.
-2. Click the following link to deploy the template 
-
-3. In the AWS Console, take the following steps:
+1. Log into [your] AWS account with the IAM entity created earlier so you have the the required permissions to deploy the an AMI. 
+2. In the AWS Console, take the following steps:
 
 
 
