@@ -17,8 +17,6 @@ has_children: false
 {:toc}
 </details>
 
-
-## Intro
 HCL Domino supports containerized deployments on EKS and traditional deployments on AMI using Windows or Linux - all for test, development, staging, and production environments.
 
 ## Typical deployment overview

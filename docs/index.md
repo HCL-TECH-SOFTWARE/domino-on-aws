@@ -10,7 +10,6 @@ has_children: true
 [View on GitHub](https://github.com/HCL-TECH-SOFTWARE/domino-on-aws){: .btn }
 
 <h1>HCL Domino on Amazon Web Services (AWS)</h1>
-This website is providing information on how to run HCL Domino on AWS.
 
 <details close markdown="block">
   <summary>
@@ -20,6 +19,8 @@ This website is providing information on how to run HCL Domino on AWS.
 1. TOC
 {:toc}
 </details>
+
+This website is providing information on how to run HCL Domino on AWS.
 
 ## Background
 This guide will detail the steps to deploy the HCL Domino Server following AWS best practices. In this guide, we cover the following types of deployments:
