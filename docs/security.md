@@ -2,14 +2,13 @@
 layout: default
 title: "Security"
 nav_order: 2
-parent: "Home"
+parent: "Architecture"
 description: "Security"
 has_children: false
 ---
 
 
 <h1>Security</h1>
-Discussing the HCL Domino server default configuration deployed pursuant to this guide, AWS general best practices, and options for securing your solution on AWS.
 
 <details close markdown="block">
   <summary>
@@ -20,6 +19,7 @@ Discussing the HCL Domino server default configuration deployed pursuant to this
 {:toc}
 </details>
 
+Discussing the HCL Domino server default configuration deployed pursuant to this guide, AWS general best practices, and options for securing your solution on AWS.
 ## Principles
 
 In HCL Domino, administrative priviliges can be restricted according to the least privilege principle / role-based administration according to this documentation.
@@ -92,8 +92,8 @@ The HCL Domino AMI is using an Amazon EFS file system and other AWS resources to
 
 HCL Domino stores application access and error logs in the Domino log (log.nsf) and/or in the Domino program files directory on the provisioned EFS storage. It defaults to <DominoData>/logs. For information about how to analyze these logs, please consult the [HCL Domino product documentation](https://help.hcltechsw.com/domino/12.0.2/admin/admn_thedominoserverloglognsf_c.html)
 
-Optionally, the Domino Web server log can be enabled to log requests sent over web protocols. For details see
-https://help.hcltechsw.com/domino/12.0.2/admin/admn_thedominowebserverlogdomlognsf_c.html
+Optionally, the Domino Web server log can be enabled to log requests sent over web protocols. For details see [Domino Web server log](https://help.hcltechsw.com/domino/12.0.2/admin/admn_thedominowebserverlogdomlognsf_c.html)
+
 
 The default implementation does not enable AWS CloudTrail logs. You can enable CloudTrail logging by navigating to the CloudTrail service console, and enabling CloudTrail logs.
 With CloudTrail, activity related to actions across your AWS infrastructure are recorded as an event in CloudTrail. This helps you enable governance, compliance, and operational and risk auditing of your AWS account.

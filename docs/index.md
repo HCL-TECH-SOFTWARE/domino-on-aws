@@ -22,9 +22,7 @@ This website is providing information on how to run HCL Domino on AWS.
 </details>
 
 ## Background
-This guide will detail the steps to deploy the HCL Domino Server following AWS best practices.
-
-In this guide, we cover the following types of deployments:
+This guide will detail the steps to deploy the HCL Domino Server following AWS best practices. In this guide, we cover the following types of deployments:
 * Single availability zone deployment
 
 ## Prerequisites and Requirements
