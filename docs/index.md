@@ -6,8 +6,8 @@ description: "HCL Domino on Amazon Web Services (AWS)"
 has_children: true
 ---
 
-[Download Latest Release](https://github.com/HCL-TECH-SOFTWARE/domino-license-analysis-utility-DLAU/releases/latest){: .btn .btn-green }
-[View on GitHub](https://github.com/HCL-TECH-SOFTWARE/domino-license-analysis-utility-DLAU/){: .btn }
+[AWS Marketplace]( https://aws.amazon.com/marketplace/ ){: .btn .btn-green }
+[View on GitHub](https://github.com/HCL-TECH-SOFTWARE/domino-on-aws){: .btn }
 
 <h1>HCL Domino on Amazon Web Services (AWS)</h1>
 This website is providing information on how to run HCL Domino on AWS.

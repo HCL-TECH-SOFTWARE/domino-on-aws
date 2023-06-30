@@ -4,7 +4,7 @@ This repository provides documentation for how to set up and run HCL Domino in a
 
 ## Documentation
 
-See the [documentation](docs/index.md) for details
+See [this page](https://opensource.hcltechsw.com/domino-on-aws/) for details
 
 ## Issues
 For issues relating specifically to the Dockerfiles and scripts, please use the [GitHub issue tracker](issues)
