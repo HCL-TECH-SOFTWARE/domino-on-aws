@@ -52,4 +52,4 @@ In case of an availability zone failure, NRPC traffic will fail over to the clus
 Failover functionality in the HCL Notes client is different from internet protocols. When setting up the HCL Notes client for the first time, it will receive a list of servers that belong to the same cluster, this list is updated on a regular basis. In case a Domino server is unavailable, the client will try to connect to other members of the same cluster automatically.
 
 All data is stored on Amazon EFS, we highly recommend you do daily back-ups and snapshots to ensure minimal loss and downtime for your application. Please visit the following links for details:
-* Amazon EFS Backup: https://docs.aws.amazon.com/efs/latest/ug/awsbackup.html
+* [Amazon EFS Backup](https://docs.aws.amazon.com/efs/latest/ug/awsbackup.html)
