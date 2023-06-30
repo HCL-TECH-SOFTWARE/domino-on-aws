@@ -100,11 +100,11 @@ Once the Amazon Machine Image has been provisioned, you need to connect to the o
 ## Connect to the server instance
 From the list of EC2 instances, select the Domino server instance created earlier and click the connect button.
 
-![AWS EC2 Connect](assets/images/png/assets/images/png/ec2-ami-connect.png)
+![AWS EC2 Connect](assets/images/png/ec2-ami-connect.png)
 
 For a video tutorial of how to connect to a Linux machine in AWS EC2 please see https://www.youtube.com/watch?v=jIxkbXB6-38 
 
-![AWS EC2 Connect](assets/images/png/assets/images/png/ec2-ami-connect2.png)
+![AWS EC2 Connect](assets/images/png/ec2-ami-connect2.png)
 
 e.g. the command should be something like:
 ```bash
@@ -141,7 +141,7 @@ For this test, the Domino server must be running the HTTP task, which is enabled
 Please note that at this point login prompt is NOT secured with an SSL/TLS certificate, so any username/password would be transferred in plain text and can be intercepted. DO NOT log in here at this point in time.
 From a browser of your choice, open http://your-servers-public-ip-address , it should display the login form:
 
-![HCL Domino Login Form](assets/images/png/assets/images/png/domino-http-login-form.png)
+![HCL Domino Login Form](assets/images/png/domino-http-login-form.png)
 
 ### Notes Client Access
 For administrative access and to perform configuration changes in HCL Domino, it will bre required to access the HCL Domino server from a Notes client. 
@@ -176,7 +176,7 @@ $ domino console
 This will open the Domino live console, from which you can executes commands like
 “show server”
 
-![HCL Domino Live Console](assets/images/png/assets/images/png/domino-live-console.png)
+![HCL Domino Live Console](assets/images/png/domino-live-console.png)
 
 A full list of commands that can be used in the live server console can be found here:
 https://help.hcltechsw.com/domino/12.0.2/admin/admn_servercommandsyntax_c.html
