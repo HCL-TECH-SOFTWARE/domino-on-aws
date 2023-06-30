@@ -38,14 +38,13 @@ An HCL Domino environment can scale in multiple dimensions.
 * Horizontally by adding more servers to an environment, either in the same cluster, by adding clusters, or by adding additional Domino Domains.
 
 ## Single AZ Architecture Diagram
-![uncached image](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/HCL-TECH-SOFTWARE/domino-on-aws/main/docs/assets/plantuml/domino-aws.puml)
 
 A typical non-HA deployment of HCL Domino would look like this:
-![Deployment Single AZ](assets/images/png/deployment-single-az.png)
-
+![uncached image](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/HCL-TECH-SOFTWARE/domino-on-aws/main/docs/assets/plantuml/domino-aws-single-az.puml)
 
 ## Multi-AZ Fault Tolerant Architecture Diagram
 
-![Deployment Small HA](assets/images/png/deployment-ha-small.png)
+A simple HA deployment of HCL Domino in a multi-AZ deployment would look like this:
+![uncached image](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/HCL-TECH-SOFTWARE/domino-on-aws/main/docs/assets/plantuml/domino-aws.puml)
 
 ## Deployment

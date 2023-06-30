@@ -1,0 +1,94 @@
+@startuml
+
+skinparam backgroundColor #EEEBDC
+skinparam roundcorner 20
+title <size:30>HCL Domino - AWS Deployment - Small</size>
+header: HCL Domino V12.0.2
+footer: (c) 2023 HCL Technologies 
+' caption Created by Th. Hampel, April 2023
+
+
+' Reference: https://github.com/awslabs/aws-icons-for-plantuml
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/main/dist
+
+!include AWSPuml/AWSCommon.puml
+!include AWSPuml/AWSSimplified.puml
+!include AWSPuml/Compute/EC2.puml
+!include AWSPuml/Compute/EC2Instance.puml
+!include AWSPuml/General/Documents.puml
+!include AWSPuml/Groups/AWSCloud.puml
+!include AWSPuml/Groups/VPC.puml
+!include AWSPuml/Groups/AvailabilityZone.puml
+!include AWSPuml/Groups/PublicSubnet.puml
+!include AWSPuml/Groups/PrivateSubnet.puml
+!include AWSPuml/NetworkingContentDelivery/VPCNATGateway.puml
+!include AWSPuml/NetworkingContentDelivery/VPCInternetGateway.puml
+!include AWSPuml/Storage/SimpleStorageService.puml
+!include AWSPuml/Storage/EFS.puml 
+
+' Domino Logo
+sprite $DOMINO [64x64/16z] {
+xPM7ZYen5CNIphcl-_-_Tci4LnbD4AYyXjLs0SSfK_YFUF8a1dTH2fa2XIrr_tkRO4_Dkan9_rf6ExNraGO8R9J_bOqsVc-TaNfElmzaoPpZTx_J-MHWfGNe
+8oyJv_e7z6ilhrYV_ka0dTRwEoZtHBd-kvb0fVKFVuXwwSq9K8XF__GCnioFFg0Ibvu822GxVN2aJN_qGGsKUtFwcmdKcU_Z3UNVsqWuWuvwppuZzupoS3AK
+nHSj-RJSas7QfoiesLVEMrRaVBu8ykgpl-Rj_GJgpC_pM_A5LHS7_Jg0mDaduaQ-SzKFUNF8crZoUVbhNWUVs4mV7_8BY_-Tbljqie-F-RBaiy_ONZksrlpY
+Fv9Fwt_asibwvyRccxBekG_AFk4RXrUkVcjzlNItrqv-uvpacpQhdzHUAnFlBrtdVARMEchl8cuTNh11IBc5Lp0R2XwQZ9DhPwlBQtwxUtjySktiY3Uc5DjB
+zpPnoUiJYxkOeYzGxiidU005YHB1lPImGYqA3r7uStdov1K
+}
+!function $DominoIMG($scale=1)
+!return "<img data:image/png;base64,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{scale="+$scale+"}>"
+!endfunction
+
+AWSEntityColoring(Domino)
+!define Domino(e_alias, e_label, e_techn) AWSEntity(e_alias, e_label, e_techn, #1C7B68, Domino, Domino)
+!define Domino(e_alias, e_label, e_techn, e_descr) AWSEntity(e_alias, e_label, e_techn, e_descr, #1C7B68, Domino, Domino)
+
+' S3 Bucket Group
+AWSGroupColoring(S3BucketGroup, #FFFFFF, AWS_COLOR_GREEN, plain)
+!define S3BucketGroup(g_alias, g_label="AWS S3 bucket") AWSGroupEntity(g_alias, g_label, AWS_COLOR_GREEN, SimpleStorageService, S3BucketGroup)
+
+' EC2 Storage
+AWSGroupColoring(EC2StorageGroup, #FFFFFF, AWS_COLOR_GREEN, plain)
+!define EC2StorageGroup(g_alias, g_label="AWS S3 bucket") AWSGroupEntity(g_alias, g_label, AWS_COLOR_GREEN, EFS, EC2StorageGroup)
+
+
+' Groups are rectangles with a custom style using stereotype - need to hide
+hide stereotype
+skinparam linetype ortho
+skinparam rectangle {
+    BackgroundColor AWS_BG_COLOR
+    BorderColor transparent
+}
+
+
+AWSCloudGroup(cloud) {
+    VPCGroup(vpc) {
+        ' S3 Bucket
+        VPCInternetGateway(internet_gateway, "Internet gateway", "")
+
+        AvailabilityZoneGroup(az_1, "\tAvailability Zone 1\t") {
+        
+            PublicSubnetGroup(az_1_public, "Public subnet") {
+                VPCNATGateway(az_1_nat_gateway, "NAT gateway", "") #Transparent
+            }
+
+            PrivateSubnetGroup(az_1_private, "Private subnet") {
+                Domino(az_1_domino_1, "Domino Server 1", "") #Transparent
+            }
+            
+            'S3BucketGroup(az_1_s3) {
+            '    rectangle "$DocumentsIMG()\n\tDAOS Tier 2\t" as az_1_daos_tier2
+            '}
+
+            az_1_domino_1 .u.> az_1_nat_gateway
+            ' az_1_domino_1 .l.> az_1_daos_tier2
+        }
+       
+
+        '# using a hidden connection to make the internet gateway the top item.
+        az_1_nat_gateway .[hidden]u.> internet_gateway
+
+
+        ' s3 .[hidden]u.> internet_gateway
+    }
+}
+@enduml
