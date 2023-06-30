@@ -27,9 +27,9 @@ For the high availability scenarios described below it is required to run a mini
 
 ## Backup
 
+HCL Domino provides an [integrated backup and restore feature](https://help.hcltechsw.com/domino/12.0.2/admin/admn_backupandrestore.html) to push data to configurable storage targets, like file systems or S3 buckets. On Windows servers, it also supports [Volume Shaddow Copy Service (VSS) backups](https://help.hcltechsw.com/domino/12.0.2/admin/admn_vsssnapshots.html).
 
-https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.html
-
+on AWS, customers can also use AWS Backup, for more information please see [this article](https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html)
 
 ## Database Failure
 

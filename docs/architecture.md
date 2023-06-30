@@ -40,9 +40,15 @@ An HCL Domino environment can scale in multiple dimensions.
 A typical non-HA deployment of HCL Domino would look like this:
 ![uncached image](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/HCL-TECH-SOFTWARE/domino-on-aws/main/docs/assets/plantuml/domino-aws-single-az.puml)
 
+HCL Domino may be able to be deployed in a single availability zone for development and evaluation purposes. This solution does not provide high availability nor fault tolerance and is not recommended for production use.
+
+To deply this scenario, follow these [step by step instructions](deployment-steps.md)
+
 ## Multi-AZ Fault Tolerant Architecture Diagram
 
 A simple HA deployment of HCL Domino in a multi-AZ deployment would look like this:
 ![uncached image](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/HCL-TECH-SOFTWARE/domino-on-aws/main/docs/assets/plantuml/domino-aws.puml)
+
+In the multi-AZ fault tolerant deployment option, the instances are situated behind a network load balancer. HCL Domino is deployed across 2 or more availability zones to ensure high availability and fault tolerance. The [architecture](architecture.md) of the HCL Domino product does not support auto-scaling, additional instances can however be joined to an existing deployment to support a growing demand.
 
 ## Deployment
