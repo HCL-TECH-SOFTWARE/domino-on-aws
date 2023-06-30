@@ -8,8 +8,7 @@ has_children: false
 ---
 
 
-<h1>Costs</h1>
-Discussing the HCL Domino server default configuration deployed pursuant to this guide, AWS general best practices, and options for securing your solution on AWS.
+<h1>Costs and Sizing</h1>
 
 <details close markdown="block">
   <summary>
@@ -19,6 +18,8 @@ Discussing the HCL Domino server default configuration deployed pursuant to this
 1. TOC
 {:toc}
 </details>
+
+Discussing the HCL Domino server default configuration deployed pursuant to this guide, AWS general best practices, and options for securing your solution on AWS.
 
 ## Costs
 

@@ -17,16 +17,13 @@ has_children: false
 {:toc}
 </details>
 
-
 Step by step instructions to deploy an HCL Domino Server in AWS.
 
 1. Log into [your] AWS account with the IAM entity created earlier so you have the the required permissions to deploy the an AMI. 
 2. In the AWS Console, take the following steps:
 
 
-
-
-## Starting an instance from an AMI 
+# Starting an instance from an AMI 
 HCL Domino is provided in form of an Amazon Machine Image (AMI), with the option to choose from different operating systems. This chapter provides the generic description for starting an AMI using Linux as an example
 For a video tutorial of how to create an AWS instance from an AMI image, please refer to https://www.youtube.com/watch?v=0Gz-PUnEUF0
 
