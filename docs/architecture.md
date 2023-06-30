@@ -19,7 +19,7 @@ has_children: false
 
 
 ## Single AZ Architecture Diagram
-![uncached image](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.github.com/plantuml/plantuml-server/master/src/main/webapp/resource/test2diagrams.txt)
+![uncached image](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/HCL-TECH-SOFTWARE/domino-on-aws/main/docs/assets/plantuml/domino-aws.puml)
 
 
 ## Multi-AZ Fault Tolerant Architecture Diagram
