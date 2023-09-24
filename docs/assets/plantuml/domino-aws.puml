@@ -2,7 +2,7 @@
 
 skinparam backgroundColor #EEEBDC
 skinparam roundcorner 20
-title <size:30>HCL Domino - AWS Deployment - Small</size>
+title <size:30>HCL Domino - AWS Deployment - HA</size>
 header: HCL Domino V12.0.2
 footer: (c) 2023 HCL Technologies 
 ' caption Created by Th. Hampel, April 2023

@@ -27,7 +27,7 @@ In HCL Domino, administrative priviliges can be restricted according to the leas
 * Best practices for futher physically securing the HCL Domino server are provided in the documentation [Securing the Domino server](https://help.hcltechsw.com/domino/12.0.2/admin/conf_physicallysecuringthedominoserver_t.html) 
 
 For more information, see [The Domino® security model](https://help.hcltechsw.com/domino/12.0.2/admin/othr_thedominosecuritymodel_c.html)
-
+and [Overview of Domino security](https://help.hcltechsw.com/domino/12.0.0/admin/othr_overviewofdominosecurity_c.html)
 
 ## IAM Role
 
@@ -59,7 +59,7 @@ Data is stored in Domino databases (*.nsf) which the customer can choose to encr
 Customers can choose to enable the Domino Attachment and Object Service (DAOS) which will store file attachments outside of the Domino database. The DAOS repository is encrypted by default. For more information about DAOS encryption please see
 * [Encryption new attachment files with a private key](https://help.hcltechsw.com/domino/12.0.2/admin/admn_encryptingattachmentfileswithoutsharedkey.html)
 
-For more information on encryption standards of HCL Domino in general, see [this documentation](https://help.hcltechsw.com/domino/12.0.2/admin/conf_aesencryption_c.html) 
+For more information on encryption standards of HCL Domino in general, see [this documentation](https://help.hcltechsw.com/domino/12.0.2/admin/conf_aesencryption_c.html) and [Encryption and electronic signatures](https://help.hcltechsw.com/domino/12.0.2/admin/conf_encryption_c.html)
 
 ## Purpose and location of keys
 Users in HCL Domino will obtain a public/private key pair are stored inside Domino. Creation, management, and security of those keys is entirely done in Domino with zero dependencies to AWS

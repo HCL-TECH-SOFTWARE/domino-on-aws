@@ -20,8 +20,12 @@ has_children: false
 </details>
 
 
-## Health Check
-tbd
+## Monitoring and Health Check
+
+For more information about monitoring HCL Domino Servers, please refer to our online documentation:
+
+* [Monitoring the Domino® system](https://help.hcltechsw.com/domino/12.0.2/admin/admn_monitoringthedominosystem_c.html)
+* [Server Health Monitor](https://help.hcltechsw.com/domino/12.0.2/admin/admn_serverhealthmonitor_c.html)
 
 ## Certificate Expiration
 

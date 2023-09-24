@@ -176,16 +176,16 @@ This will open the Domino live console, from which you can executes commands lik
 
 ![HCL Domino Live Console](assets/images/png/domino-live-console.png)
 
-A full list of commands that can be used in the live server console can be found here:
-https://help.hcltechsw.com/domino/12.0.2/admin/admn_servercommandsyntax_c.html
+A full list of commands that can be used in the live server console can be found here:[List of server commands and syntax](https://help.hcltechsw.com/domino/12.0.2/admin/admn_servercommandsyntax_c.html)
 
 
 # Next Steps & Followup
 The basic server configuration is complete. However, based on the intended purpose of the server instance you need to apply further configuration.
 additional configuration may include:
-* Security hardening of the HCL Domino Server
-* Enabling HCL Verse
-* Enabling HCL Nomad
-* Enabling Ontime
-* Enabling Panagenda MarvelClient
-* Deploying HCL Notes Client software to users
+* [Security hardening of the HCL Domino Server](https://help.hcltechsw.com/domino/10.0.1/othr_overviewofdominosecurity_c.html)
+* [Configuring Backup](https://help.hcltechsw.com/domino/12.0.2/admin/admn_backupandrestore.html) 
+* [Enabling and configuring HCL Verse](https://help.hcltechsw.com/verse_onprem/2.0.0/admin/vop_configuring_server.html)
+* [Enabling and configuring the HCL Nomad Server](https://help.hcltechsw.com/nomad/1.0_admin/nomadserver_domino.html)
+* [Enabling Ontime Group Calendar](https://ontimesuite.com/en/domino/support/documentation)
+* [Enabling Panagenda Marvel Client Essentials Notes management solution](https://help.hcltechsw.com/domino/12.0.2/admin/plan_marvel_client.html)
+* [Deploying HCL Notes Client software to users](https://help.hcltechsw.com/domino/12.0.2/admin/inst_installingnotesclients_c.html)

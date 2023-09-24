@@ -52,3 +52,5 @@ A simple HA deployment of HCL Domino in a multi-AZ deployment would look like th
 In the multi-AZ fault tolerant deployment option, the instances are situated behind a network load balancer. HCL Domino is deployed across 2 or more availability zones to ensure high availability and fault tolerance. The [architecture](architecture.md) of the HCL Domino product does not support auto-scaling, additional instances can however be joined to an existing deployment to support a growing demand.
 
 ## Deployment
+
+Whatever deployment you choose, each instance is a Domino server which can be configured to run in a standalone domain, be part of a Domino cluster and/or communicate (replicate) with other servers inside our outside of your environment if you choose to do so. 
