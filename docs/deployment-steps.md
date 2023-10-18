@@ -55,7 +55,7 @@ Click Browse more AMI’s to see shared Amazon Machine Images and Images from th
 
 ![AWS EC2 Browse Images](assets/images/png/ec2-ami-browse.png)
 
-## Choose an Amazone Machine Image (AMI)
+## Choose an Amazon Machine Image (AMI)
 Search for “Domino” to find the HCL Domino server machine image. Click on “Select” to continue with this image
 
 ![AWS EC2 Select Image](assets/images/png/ec2-ami-select.png)
@@ -89,6 +89,8 @@ For production deployments considder using 50 Gbyte or more
 ## Launch Instance
 Review all settings again and launch the instance when ready.
 The machine is successfully deployed when this message is displayed.
+
+![AWS EC2 Connect](assets/images/png/ec2-launch-success.png)
 
 Return to your AWS dashboard to see the running instance
 
@@ -136,7 +138,7 @@ This chapter describes initial connectivity tests that can be performed after co
 ### Basic Connectivitiy using HTTP
 Verify if you can connect to the HCL Domino server by trying to access the Domino web login form via HTTP / TCP Port 80.
 For this test, the Domino server must be running the HTTP task, which is enabled by default when following the setup instructions above.
-Please note that at this point login prompt is NOT secured with an SSL/TLS certificate, so any username/password would be transferred in plain text and can be intercepted. DO NOT log in here at this point in time.
+Please note that at this point login prompt is NOT secured with an SSL/TLS certificate, so any username/password would be transferred in plain text and can be intercepted. **DO NOT** log in here at this point in time.
 From a browser of your choice, open http://your-servers-public-ip-address , it should display the login form:
 
 ![HCL Domino Login Form](assets/images/png/domino-http-login-form.png)
