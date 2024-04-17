@@ -114,23 +114,44 @@ ssh -i "your-aws-key.pem" ec2-user@your-ip.your-amazon-region.compute.amazonaws.
 
 ## Domino Initial configuration
 Once logged into the operating system of the EC2 instance, 
-Switch to root user using the following command:
+start the Domino Setup using the command
 ```bash
-$ sudo su
+$ domino 
 ```
+This will start the Domino startup scripts and will prompt you to configure your server. On this prompt choose "C" to configure as shown:
 
-From there, start the Domino Setup using the command
-```bash
-$ domino setup
-```
+![Domino Server Configuration 1](assets/images/png/domino-server-configuration.png)
 
-Follow instructions in the setup to specify if this is the first server in your environment or an additional server extending an existing environment.
-Please make sure to remember passwords defined in this process!
+Select if you want to install the First or an  Additional server in your environment as appropriate (typically First)
 
-Start the Domino server
-```bash
-$ domino start 
-```
+![Domino Server Configuration 2](assets/images/png/domino-server-configuration2.png)
+
+Define the values for server, organization, administrator name, etc. The configuration utility will validate  your input against the dominoOneTouchSetup.schema.json.  If the configuration file passes validation you can start the server. 
+![Domino Server Configuration 3](assets/images/png/domino-server-configuration3.png)
+
+If the validation fails either re-run the configure option (C) or, for advanced users, you can edit the configuration file using the vi editor by using option (E).
+
+Start the server using the option "S"
+
+![Domino Server Configuration 4](assets/images/png/domino-server-configuration4.png)
+
+Although the server is now running, it is required to restart the server once more create the Transaction Logs.
+so use the option "T" to shutdown Domino 
+
+![Domino Server Configuration 5](assets/images/png/domino-server-configuration5.png)
+
+Wait for the shutdown process to complete
+
+![Domino Server Configuration 6](assets/images/png/domino-server-configuration6.png)
+
+
+![Domino Server Configuration 7](assets/images/png/domino-server-configuration7.png)
+
+Once the shutdown process has completed, use "S" to start Domino again.
+From there you can, if you like, open the server console by using "C" where you can see the live console of the server
+
+![Domino Server Configuration 8](assets/images/png/domino-server-configuration8.png)
+
 
 ## Testing connectivity
 This chapter describes initial connectivity tests that can be performed after completing the basic Domino server setup.
