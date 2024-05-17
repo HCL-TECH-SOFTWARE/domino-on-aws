@@ -16,6 +16,6 @@ We welcome contributions following [our guidelines](CONTRIBUTING.md).
 Files in this repository are licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html). 
 
 HCL Domino and add-on products are commercial software - The software licenses agreement does not permit further distribution.
-* HCL Domino Enterprise Server 12 under the [HCL License Agreement](https://www.hcltechsw.com/wps/portal/resources/license-agreements)
+* HCL Domino Enterprise Server under the [HCL License Agreement](https://www.hcltechsw.com/wps/portal/resources/license-agreements)
 * HCL Domino Leap under the [HCL License Agreement](https://www.hcltechsw.com/wps/portal/resources/license-agreements)
 * HCL Notes Traveler under the [HCL License Agreement](https://www.hcltechsw.com/wps/portal/resources/license-agreements)
