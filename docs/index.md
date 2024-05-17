@@ -48,7 +48,7 @@ and testing could take up to an hour.
 
 An AWS Marketplace subscription is required for production use of the HCL Domino AMI. The two options for obtaining a subscription and/or license are:
 * Pay as you go (PAYG) - Subscribe through the AWS Marketplace and pay for time-based usage. Costs are outlined in the AWS Marketplace and in the costs section of this guide. This method does not require a separate license from the HCL sales team.
-* Bring your own license (BYOL) - Subscribe through the AWS Marketplace and apply an existing license. Please contact us directly to order a license at XXXXX@hcltechsw.com.
+* Bring your own license (BYOL) - Subscribe through the AWS Marketplace and apply an existing license. Please contact us directly to order a license at [Domino_AWS_Sales@pnp-hcl.com](Domino_AWS_Sales@pnp-hcl.com) .
 
 
 ### AWS Account

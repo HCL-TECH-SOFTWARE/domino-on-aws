@@ -26,7 +26,7 @@ Step by step instructions to deploy an HCL Domino Server in AWS.
 
 # Starting an instance from an AMI 
 HCL Domino is provided in form of an Amazon Machine Image (AMI), with the option to choose from different operating systems. This chapter provides the generic description for starting an AMI using Linux as an example
-For a video tutorial of how to create an AWS instance from an AMI image, please refer to https://www.youtube.com/watch?v=0Gz-PUnEUF0
+For a video tutorial of how to create an AWS instance from an AMI image, please refer to [this video](https://www.youtube.com/watch?v=0Gz-PUnEUF0)
 
 
 ## Choose the AWS region in which you want to deploy 
@@ -102,7 +102,7 @@ From the list of EC2 instances, select the Domino server instance created earlie
 
 ![AWS EC2 Connect](assets/images/png/ec2-ami-connect.png)
 
-For a video tutorial of how to connect to a Linux machine in AWS EC2 please see https://www.youtube.com/watch?v=jIxkbXB6-38 
+For a video tutorial of how to connect to a Linux machine in AWS EC2 please see [this video](https://www.youtube.com/watch?v=jIxkbXB6-38) 
 
 ![AWS EC2 Connect](assets/images/png/ec2-ami-connect2.png)
 
