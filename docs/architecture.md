@@ -25,7 +25,7 @@ The typical use case for HCL Domino is providing a mail and application platform
 A deployment consists of a single server (either a docker container or a virtual machine with Windows or Linux) with preferably 2 CPU cores, 8 GB RAM and 50 GB storage that can be deployed in any availability zone. 
 Storage, memory, and CPU resources can be added as needed to the deployment. For more information see [sizing](sizing.md)
 
-### HCL Domino componentes
+### HCL Domino components
 
 HCL Domino Server is an all in one product where a single instance of the product is providing access to rich clients and web browser, a NAT gateway is used to provide access to TCP ports 1352, 80/443, and other ports as needed. 
 
